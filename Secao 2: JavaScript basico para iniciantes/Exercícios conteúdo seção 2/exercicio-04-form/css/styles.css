@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+table th {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+table td{
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: darkcyan;
+}
+
+p {
+    font-size: 25pt;
+}
