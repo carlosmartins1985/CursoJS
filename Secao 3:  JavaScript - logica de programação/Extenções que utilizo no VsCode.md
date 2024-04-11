@@ -4,7 +4,7 @@ Algumas extenções devemos instalar, outras não.
 
 Extenções que o professor utiliza
 
-* Code runner;
+* Code runner; Já 
 
 * Code Time, faz uma métrica de tempo em que estamos codificando, e soma até quantas teclas digitamos neste período;
 
