@@ -70,11 +70,7 @@ Na verdade criamos uma extrutura básica;
 
 \* ***<u>Podemos criar o nosso própio layout css.</u>***
 
-
-
 ***<u>Estilizando o documento</u>***
-
-
 
 Começamos colocando para todos os elementos;
 
@@ -133,16 +129,11 @@ body {
 }
 ```
 
-
-
 ***<u>container</u>***
 
 A seguir as propriedades do container;
 
 ```css
-
-
-
 .container {
     max-width: 640px; /* Tamanho máximo */
     margin: 50px auto; /* Alinha o container no meio da tela, e adiciona uma margem de 50px top e botton.*/
@@ -152,11 +143,7 @@ A seguir as propriedades do container;
 }
 ```
 
-
-
 ***<u>form</u>***
-
-
 
 * Estilizamos todos os elementos em uma única linha, a propriedade de alinhamento dos elementos;
 
@@ -167,8 +154,6 @@ form input, form label, form button {
     margin-botton: 10px;
 }
 ```
-
-
 
 ***<u>inputs</u>***
 
@@ -184,8 +169,6 @@ form input:focus{
     outline: 1px solid var(--primary-color);
 }
 ```
-
-
 
 ***<u>button</u>***
 
