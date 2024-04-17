@@ -1,6 +1,7 @@
 ## Funções
 
-Na prática funçoes executam ações, são trechos de códigos que executam alguma tarefa.
+Na prática, funções executam ações.
+São trechos de códigos que executam alguma tarefa.
 
 Geralmente mandamos um valor para uma função e recebemos um valor de retorno.
 
