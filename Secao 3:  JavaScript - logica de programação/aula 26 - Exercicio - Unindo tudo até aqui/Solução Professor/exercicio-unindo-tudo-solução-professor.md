@@ -266,8 +266,6 @@ if(!peso) {
 
 E assim já temos o nosso IMC calculado.
 
-
-
 ***<u>função getNivelIMC</u>***
 
 Agora criamos a funçã que irá retornar o nível do IMC recebido.
@@ -322,8 +320,6 @@ if(imc >= 39.9){
     if (imc >= 18.5) return nivel[1];
     if (imc < 18.5) return nivel[0];
 ```
-
-
 
 ***<u>Exibindo o resultado na tela</u>***
 
