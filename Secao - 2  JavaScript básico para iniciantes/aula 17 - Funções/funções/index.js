@@ -1,7 +1,7 @@
 //          FUNÇÕES
 
 /*
-        Funções executam ações, são techos de código que podem retornar ou 
+        Funções executam ações, são trechos de código que podem retornar ou 
     não alguma coisa.
     Declaramos uma função da seguinte maneira:
 
