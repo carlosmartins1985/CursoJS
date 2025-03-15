@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <!-- 
+        Criar uma aplicação de lista de compras para itens do dia-dia.
+
+        Iformações do produto;
+
+        * nome;
+        * quantidade;
+        * preço - em formato number para ser calculado o valor total dos itens;
+        * categoria;
+        * exibir a data da compra;
+        * total da soma dos preços dos itens;
+
+    -->
+
+    <header>
+        <h1>Lista de compras</h1>
+    </header>
+
+    <div>
+        <form action="" method="get">
+            <div>
+                <label for="nomeProduto">Produto</label>
+                <input type="text" id="nomeProduto" class="nomeProduto">
+            </div>
+            <div>
+                <label for="qtdeProduto">Quantidade</label>
+                <input type="text" id="qtdeProduto" class="qtdeProduto">
+            </div>
+            <div>
+                <label for="precoProduto">Preço</label>
+                <input type="text" id="precoProduto" class="precoProduto">
+            </div>
+            <div>
+                <label for="categoriaProduto">Categoria</label>
+                <input type="text" id="categoriaProduto" class="categoriaProduto">
+            </div>
+            <button>Enviar</button>
+        </form>
+    </div>
+
+    <div>
+        <table class="resultado">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1 class="total"></h1>
+    <script src="js/script.js"></script>
+</body>
+</html>
