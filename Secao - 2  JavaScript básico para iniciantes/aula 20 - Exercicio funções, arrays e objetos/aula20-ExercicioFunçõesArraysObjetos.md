@@ -14,7 +14,7 @@ Para iniciar criamos um formulário no html, sem nos preocupar com a semântica,
 
 * Podemos usar tanto GET como POST, pois a idéia não é enviar o formulário;
 
-* Então utilizamos com o método GET mesmo;
+* Então faremos com o método GET mesmo;
 
 ```html
     <form action="" method="get">
