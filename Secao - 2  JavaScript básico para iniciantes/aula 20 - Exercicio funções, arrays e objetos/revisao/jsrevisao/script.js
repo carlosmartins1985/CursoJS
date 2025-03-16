@@ -111,7 +111,7 @@
                 Pegando os dados digitados
     
     * Como já estamos selecinando o form, podemos, ao invés de buscar no html todo pelo 
-    input, podemos selecionar direto através da variável form.
+    input, selecionamos direto através da variável form.
 
         const nome = form.querySelector(".nome");
         const sobrenome = form.querySelector(".sobrenome");
