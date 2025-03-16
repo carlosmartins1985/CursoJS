@@ -52,7 +52,7 @@
     * A partir daqui passamos a trabalhar dentro dessa função meuEscopo.
 
     * Iniciamos selecionando o formulário no html, utilizando o querySelector, que seleciona os 
-    elementos da mesma forma que o css seleciona
+    elementos da mesma forma que o css seleciona.
 
         // Utilizamos o seletor de classe para selecinar o formulário;
         const form = document.querySelector(".form");
