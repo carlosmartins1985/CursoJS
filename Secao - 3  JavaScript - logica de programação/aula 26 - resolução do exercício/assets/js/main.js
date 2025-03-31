@@ -37,7 +37,7 @@ document.addEventListener('submit', function (e) {
     // Aqui criamos uma função especifica para calcular o imc
     const imc = getIMC(peso, altura);
 
-    // Aqui pegamos o nível do ims, o texto
+    // Aqui pegamos o nível do imc, o texto
     const nivelIMC = getNivelIMC(imc);
     
     // Aqui criamos a mensagem que será exibida para o usuário 

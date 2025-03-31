@@ -12,10 +12,12 @@
     
         function recebeEventoForm(e) {
             e.preventDefault();
-    
+            
+            const inputNome = e.target.querySelector('#nome')
             const inputPeso = e.target.querySelector('#peso');
             const inputAltura = e.target.querySelector('#altura');
-    
+            
+            const nome = inputNome.value;
             const peso = Number(inputPeso.value);
             const altura = Number(inputAltura.value);
     
@@ -31,7 +33,7 @@
     
             const imc = getIMC(peso, altura);
             const nivelImc = getNivelImc(imc);
-            const msg = `O seu imc é: ${imc} (${nivelImc}).`
+            const msg = `${nome} O seu imc é: ${imc} (${nivelImc}).`
     
             setResultado(msg, true);
         }
