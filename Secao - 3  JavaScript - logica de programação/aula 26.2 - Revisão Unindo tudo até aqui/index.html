@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Modelo</title>
+    <title>Calculadora IMC</title>
 </head>
 
 <body>
+    <!-- Extrutura básica para implementação de uma calculadora de IMC-->
+
+    <!-- Seção que contém o container da aplicação, ou seção. -->
     <section class="container">
         <h1>Calcule seu IMC</h1>
 
+        <!-- Um formulário básico para receber os valores digitados pelo usuário -->
         <form action="" id="formulario" method="post">
             <label for="peso">Peso</label>
             <!--Podemos usar ou não o name-->
@@ -23,10 +27,13 @@
             <button type="submit">Calcular</button>
         </form>
 
-        <div id="resultado"></div>
+        <!-- div que irá exibir o resultado do cálculo do IMC. -->
+        <div id="resultado">
+
+        </div>
     </section>
 
-
+    <!-- Script  -->
     <script src="./assets/js/main.js"></script>
 </body>
 
