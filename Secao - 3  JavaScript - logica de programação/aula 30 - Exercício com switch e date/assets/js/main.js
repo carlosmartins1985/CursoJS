@@ -1,3 +1,11 @@
+// Solução usando rescursos nátivos da linguagem
+const data = new Date();
+const h1 = document.querySelector('#dataAtual');
+
+h1.innerHTML = data.toLocaleString("pt-BR", { dateStyle: "full", timeStyle: "short"});
+
+/*
+                          Solução com switch case
 const data = new Date();
 
 const msg = `${getWeekDay(data.getDay())}, ${zeroAEsquerda(data.getDate())}` +
@@ -102,5 +110,42 @@ function setDataAtual(msg) {
 function zeroAEsquerda(num){
   return num >= 10 ? num : `0${num}`;
 }
+*/
+
+/*
+                              Solução usando arrays
+
+function getMonthDay(numeroMes) {
+  const mes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro',
+            ,'outubro', 'novembro', 'dezembro'];
+  
+    return mes[numeroMes];
+}
+
+function getWeekDay(diaSemana) {
+  const diaSemanaTexto = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira',
+                          'sexta-feira', 'sábado'];
+
+  return diaSemanaTexto[diaSemana];
+}
+
+function zeroAEsquerda(num){
+  return num >= 10 ? num : `0${num}`;
+}
+
+function criaData(data){
+  const diaSemana = data.getDay();
+  const numeroMes = data.getMonth();
+
+  const nomeDia = getWeekDay(diaSemana);
+  const nomeMes = getMonthDay(numeroMes);
+
+  return (`${nomeDia}, ${data.getDate()} de ${nomeMes} de ${data.getFullYear()}` + `,
+  ${zeroAEsquerda(data.getHours())}:${zeroAEsquerda(data.getMinutes())}.`)
+}
+
+h1.innerHTML = criaData(data);
+*/
+
 
 
