@@ -1,4 +1,5 @@
 const data = new Date();
+const dateNow = Date.now();
 
 // console.log(data);
 
@@ -13,5 +14,5 @@ function formatarData(data) {
 
 const dataFormatada = formatarData(data);
 
-console.log(dataFormatada);
+console.log(dataFormatada, dateNow);
 
