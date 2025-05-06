@@ -33,8 +33,6 @@ function criaData(data){
 
 h1.innerHTML = criaData(data);
 
-
-
 // Solução usando o switch case
 // function getWeekDay(diaSemana) {
 //   let diaSemanaTexto;

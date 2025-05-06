@@ -1,8 +1,10 @@
-# Solução do exercicio switch e date
+# Aula 30 - Exercicio Switch e Date
+
+
+
+## Solução do exercicio switch e date
 
 Aqui apresentaremos três soluções.
-
-
 
 Primeiro selecionamos direto o h1, dentro do container;
 
@@ -30,14 +32,12 @@ Saída;
 
 # Tue Apr 29 2025 20:08:52 GMT-0300 (Horário Padrão de Brasília)
 
-
-
 Usamos a mesma função criada na aula sobre Date.
 
 ```js
 function getWeekDay(diaSemana) {
     let diaSemanaTexto;
-  
+
     switch (diaSemana) {
       case 0:
         diaSemanaTexto = "Domingo";
@@ -69,14 +69,12 @@ function getWeekDay(diaSemana) {
 
 Essa para obter o dia da semana, segunda-feira, etc...
 
-
-
 Criamos a função para retornar o mes, janeiro, fevereiro, usando a mesma lógica do dia da semana.
 
 ```js
 function getMonthDay(mes) {
     let mesTexto;
-  
+
     switch (mes) {
       case 0:
         mesTexto = "Janeiro";
@@ -123,11 +121,7 @@ function getMonthDay(mes) {
 
 Irá receber o número correspondente ao mes e retorna o nome do mes.
 
-
-
 Criamos uma função que irá criar a data completa.
-
-
 
 O código completo fica assim;
 
@@ -233,8 +227,6 @@ h1.innerHTML = criaData(data);
 
 Porém esse não é o melhor método a se fazer, pois fica muito grande, muitas linhas de código.
 
-
-
 Podemos criar a data completa com menos linhas de código usando objetos;
 
 ```js
@@ -251,8 +243,6 @@ h1.innerHTML = data.toLocaleString('pt-BR', opcoes);
 
 Porém o professor usou toLocaleDateString, o que deu erro, usando o toLocaleString funcionou.
 
-
-
 Podemos ainda excluir a variável opções e por tudo dentro do localeString;
 
 ```js
@@ -264,8 +254,6 @@ h1.innerHTML = data.toLocaleString('pt-BR', {dateStyle: 'full', timeStyle: 'shor
 
 Assim resolvemos com 3 linhas de código.
 
-
-
 Uma terceira forma de solucionar é usando arrays no lugar do switch, o que reduziria mais ainda o código;
 
 ```js
@@ -276,7 +264,7 @@ const data = new Date();
 function getMonthDay(numeroMes) {
   const mes = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro',
             ,'outubro', 'novembro', 'dezembro'];
-  
+
     return mes[numeroMes];
 }
 
@@ -306,11 +294,3 @@ h1.innerHTML = criaData(data);
 ```
 
 Lembramos que cada índice do array é representado por um número, iniciando do índice zero, em diante.
-
-
-
-
-
-
-
-
