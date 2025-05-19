@@ -39,8 +39,6 @@ for (let i = 0; i < elementos.length; i++) {
 }
 ```
 
-
-
 ## <u>Solução professor</u>
 
 * Uma dica, sempre testar com um alert se o js está funcionando.
@@ -173,8 +171,6 @@ for(let i = 0; i < elementos.length; i++) {
 container.appendChild(div);
 ```
 
-
-
 Também podemos criar um nó de textos;
 
 ```js
@@ -188,8 +184,6 @@ Então devemos adicionar isso a tagCriada, usando o appendChild;
 ```js
 tagCriada.appendChild(textoCriado);
 ```
-
-
 
 Código final
 
@@ -228,8 +222,6 @@ for(let i = 0; i < elementos.length; i++) {
 container.appendChild(div);
 ```
 
-
-
 ## Minha solução
 
 ```js
@@ -252,9 +244,6 @@ for (let i = 0; i < elementos.length; i++) {
     div.appendChild(tagCriada);
 }
 container.appendChild(div);
-
 ```
 
 Na minha solução usei o textContent direto na tagCriada para inserir o texto.
-
-
