@@ -4,8 +4,6 @@
 
 Por exemplo uma string, um array.
 
-
-
 Criamos uma  string qualquer;
 
 ```js
@@ -33,7 +31,7 @@ r
 l
 o
 s
- 
+
 M
 a
 r
@@ -46,8 +44,6 @@ s
 ```
 
 Assim conseguimos acessar cada letra da string.
-
-
 
 Podemos também usar o for in;
 
@@ -67,7 +63,7 @@ r
 l
 o
 s
- 
+
 M
 a
 r
@@ -84,8 +80,6 @@ Também temos os índices do nome.
 Notamos que em ambos os fors, precisamos utilizar o índice, [i], para acessar o valor do índice.
 
 E seria interressante conseguir pegar exatamente o valor, direto, sem usar o [ i ].
-
-
 
 Podemos então usar o for of, que irá pegar o valor do índex, diretamente.
 
@@ -107,7 +101,7 @@ r
 l
 o
 s
- 
+
 M
 a
 r
@@ -122,8 +116,6 @@ s
 Assim conseguimos trazer todos os valores do índice do nome, ao ínves de retornar o índice, retorna o valor.
 
 Isso porque a string é iterável, ou seja, tem índices.
-
-
 
 Podemos testar com arrays;
 
@@ -147,8 +139,6 @@ João
 Temos como retorno os elementos do array.
 
 Seria o mesmo resultado que usar o nome da variável e o indice, no caso nome[ i ].
-
-
 
 ### Todas as variácões;
 
@@ -191,8 +181,6 @@ João
 
 Nos casos em que precisamos do índice podemos usar o for in, que também retorna o índice, nos casos onde só é necessário o valor, e não o índice, podemos usar o for of.
 
-
-
 ## forEach
 
 Podemos também usar o for each para iterar sobre o array;
@@ -220,8 +208,6 @@ Neste caso usamos o forEach como sendo um método do array, usando o nome do arr
 O forEach recebe uma função, que recebe como parâmetro os elementos, (el), e os retorna direto dentro do log.
 
 O elemento no caso é o valor do índex.
-
-
 
 Podemos exibir o valor e o indice;
 
@@ -265,13 +251,9 @@ João 2 [ 'Carlos', 'Pedro', 'João' ]
 [Done] exited with code=0 in 0.08 seconds
 ```
 
-
-
 Podemos utilizar qualquer um deles, dependendo da necessidade.
 
 Para arrays, qualquer um deles irá funcionar, claro que com suas particularidades, ou seja, depende do que precisamos retornar, se somente o índice, só o valor, ou o índice e o valor.
-
-
 
 Já para objeto, não conseguimos utilizar o for of, pois o objeto não é iterável.
 
@@ -297,8 +279,6 @@ sobrenome
 
 Poderíamos aqui pegar as chaves, keys;
 
-
-
 ```js
 const pessoa = {
     nome: 'Carlos',
@@ -321,11 +301,7 @@ E também pegar o valor, pegando o objeto pessoa, seguido da chave entre chaves,
 
 pessoa[key].
 
-
-
 <mark>Se tentamos usar o for of, não conseguimos, pois o objeto não é iterável.</mark>
-
-
 
 ## Resumindo;
 
@@ -334,5 +310,3 @@ pessoa[key].
 * for in - Retorna o índice ou chaves (string, arrays ou objetos);
 
 * for of - Retorna o valor em si (iteráveis, arrays ou strings).
-
-
