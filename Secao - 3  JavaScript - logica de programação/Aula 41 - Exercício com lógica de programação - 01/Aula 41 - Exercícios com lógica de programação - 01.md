@@ -14,6 +14,8 @@
 
 * Operadores de comparação;
 
+* Operação ternária com arrow function.
+
 
 
 ## Minhas soluções
@@ -33,7 +35,7 @@ const validarMaior = (num1, num2) => {
 console.log(validarMaior(num1, num2));
 ```
 
-* Usando uma arrow function com apenas uma linha;
+* Usando uma arrow function com apenas uma linha, essa foi a solução final;
 
 ```js
 // Solução com arrow function em uma linha apenas
@@ -61,7 +63,6 @@ console.log(validarMaior(num1, num2));
 function validarMaior(num1, num2) {
     return Math.max(num1, num2);
 }
-
 console.log(validarMaior(num1, num2));
 ```
 
