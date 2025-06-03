@@ -1,7 +1,5 @@
 # Aula 41 - Exercícios com lógica de programação 01
 
-
-
 ```js
 // Escreva uma função que recebe dois números e retorne o maior deles
 ```
@@ -16,11 +14,7 @@
 
 * Operação ternária com arrow function.
 
-
-
 ## Minhas soluções
-
-
 
 * Solução usando a operação ternária dentro de uma arrow function;
 
@@ -76,10 +70,6 @@ function validarMaior(x, y) {
 console.log(validarMaior(100, 1500));
 ```
 
-
-
-
-
 ## Solução professor
 
     Irá mostrar algumas melhorias que talvez não tenhamos implementado.
@@ -125,8 +115,6 @@ function max(x, y) {
 
 console.log(max(100, 1500));
 ```
-
-
 
 ## Refatoração
 
@@ -180,7 +168,5 @@ const validarMaior = (num1, num2) => num1 > num2 ? num1 : num2;
 
 console.log(validarMaior(1000, 100));
 ```
-
-
 
     Assim conseguimos resolver o problema usando apenas uma linha de código, juntamente com arrow function.

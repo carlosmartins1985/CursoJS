@@ -4,8 +4,6 @@ Nesta aula iremos abordar o break e continue dentro dos laços.
 
 Isso nos permite ter um controle de quando pular um elemento, e elas funcionam em qualquer laço, seja for, for in, for of, while...
 
-
-
     Criamos um arrays com números como exemplo;
 
 ```js
@@ -148,7 +146,7 @@ for (let numero of numeros) {
 
     if(numero === 2 || numero === 5){
         console.log('Pulei o número dois e 5');
-        
+
         continue;
     }
 
@@ -174,8 +172,6 @@ Pulei o número dois e 5
 [Done] exited with code=0 in 0.342 seconds
 ```
 
-
-
 ## Break
 
     O break é muito interessante pois pode até poupar recursos do servidor, pode melhorar a velocidade do código.
@@ -191,7 +187,7 @@ for (let numero of numeros) {
 
     if(numero === 2 || numero === 5){
         console.log('Pulei o número dois e 5');
-        
+
         continue;
     }
 
@@ -228,12 +224,12 @@ for (let numero of numeros) {
 
     if(numero === 2 || numero === 5){
         console.log('Pulei o número dois e 5');
-        
+
         continue;
     }
 
     console.log(numero);
- 
+
     if(numero === 7) {
         break;
 
@@ -271,12 +267,12 @@ for (let numero of numeros) {
 
     if(numero === 2 || numero === 5){
         console.log('Pulei o número dois e 5');
-        
+
         continue;
     }
 
     console.log(numero);
- 
+
     if(numero === 7) {
         console.log('7 encontrado, saindo...');
         break;
@@ -305,11 +301,7 @@ Pulei o número dois e 5
 [Done] exited with code=0 in 0.164 seconds
 ```
 
-
-
     A diferênça entre continue e break, é que quando, no continue, por exemplo, o valor é encontrado, ele pula o valor e volta para o inicio do laço, já com o break, assim que a palavra break é encontrada, ele sai do laço, e nada mais é executado.
-
-
 
     Isso irá funcionar com qualquer for;
 
@@ -331,11 +323,9 @@ for (let i = 0; i < numeros.length; i++) {
     }
 
     console.log(numeros[i]);
-    
+
 }
 ```
-
-
 
     Usando o while, a principio caimos em um laço infinito;
 
@@ -357,7 +347,7 @@ while (i < numeros.length) {
 
     }
     console.log(numero);
-    
+
     i++;
 }
 ```
@@ -388,7 +378,7 @@ while (i < numeros.length) {
 
     }
     console.log(numero);
-    
+
     i++;
 } 
 ```
@@ -445,5 +435,3 @@ Pulei o número dois e 5
 
 [Done] exited with code=0 in 0.327 seconds
 ```
-
-
