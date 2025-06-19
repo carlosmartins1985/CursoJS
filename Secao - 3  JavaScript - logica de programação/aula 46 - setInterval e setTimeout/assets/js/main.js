@@ -6,18 +6,22 @@ function mostrarHora() {
     })
 }
 
-const timer = setInterval(function () {
+const timer = setInterval(function () {   
+    
     console.log(mostrarHora());
 }, 1000);
 
-setTimeout(function (){
-    clearInterval(timer)
-}, 3000);
+// setTimeout(function (){
+//     clearInterval(timer)
+// }, 0);
 
-setTimeout(function() {
-    console.log('Olá mundo!');
-}, 5000)
+// setTimeout(function() {
+//     console.log('Olá mundo!');
+// }, 5000)
 
 // function funcaoDoInterval() {
 //     console.log(mostrarHora());
 // }
+
+
+

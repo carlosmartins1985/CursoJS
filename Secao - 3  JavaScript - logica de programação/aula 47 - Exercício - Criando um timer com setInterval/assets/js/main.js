@@ -1,17 +1,61 @@
-const relogio = document.querySelector('.relogio');
-const iniciar = document.querySelector('.iniciar');
-const pausar = document.querySelector('.pausar');
-const zerar = document.querySelector('.zerar');
+function cronometro() {
+  function getSecondsHour(second) {
+    const data = new Date(second * 1000);
 
-iniciar.addEventListener('click', function(e) {
-    relogio.innerHTML = `Cliquei no iniciar`
-})
+    return data.toLocaleTimeString("pt-BR", {
+      hour12: false,
+      timeZone: "GMT",
+    });
+  }
 
-pausar.addEventListener('click', function(e) {
-    alert('Cliquei em pausar');
-})
+  const relogio = document.querySelector(".relogio");
+  let segundos = 0;
+  let timer;
 
-zerar.addEventListener('click', function(e) {
-    alert('Cliquei em zerar');
-})
+  function iniciarRelogio() {
+    timer = setInterval(function () {
+      segundos++;
+      relogio.innerHTML = getSecondsHour(segundos);
+    }, 1000);
+  }
 
+  document.addEventListener("click", function (e) {
+    const el = e.target;
+    if (el.classList.contains("iniciar")) {
+      clearInterval(timer);
+      relogio.classList.remove("pausado");
+      iniciarRelogio();
+    }
+
+    if (el.classList.contains("pausar")) {
+      clearInterval(timer);
+      relogio.classList.add("pausado");
+    }
+
+    if (el.classList.contains("zerar")) {
+      clearInterval(timer);
+      relogio.classList.remove("pausado");
+      relogio.innerHTML = "00:00:00";
+      segundos = 0;
+    }
+  });
+
+  // iniciar.addEventListener('click', function(e) {
+  //     clearInterval(timer);
+  //     relogio.classList.remove('pausado');
+  //     iniciarRelogio();
+  // })
+
+  // pausar.addEventListener('click', function(e) {
+  //     clearInterval(timer)
+  //     relogio.classList.add('pausado');
+  // })
+
+  // zerar.addEventListener('click', function(e) {
+  //     clearInterval(timer)
+  //     // relogio.classList.remove('pausado');
+  //     relogio.innerHTML = '00:00:00';
+  //     segundos = 0;
+  // })
+}
+cronometro();
