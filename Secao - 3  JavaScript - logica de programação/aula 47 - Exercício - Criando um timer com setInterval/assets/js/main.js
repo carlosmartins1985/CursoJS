@@ -39,7 +39,14 @@ function cronometro() {
       segundos = 0;
     }
   });
+}
+cronometro();
 
+
+
+
+
+  // Maneira memos performática de se fazer.
   // iniciar.addEventListener('click', function(e) {
   //     clearInterval(timer);
   //     relogio.classList.remove('pausado');
@@ -57,5 +64,3 @@ function cronometro() {
   //     relogio.innerHTML = '00:00:00';
   //     segundos = 0;
   // })
-}
-cronometro();
