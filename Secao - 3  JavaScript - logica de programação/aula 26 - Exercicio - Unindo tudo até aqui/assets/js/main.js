@@ -33,7 +33,8 @@ function meuEscopo() {
         const nivelImc = getNivelImc(imc);
         const msg = `O seu imc é: ${imc} (${nivelImc}).`
 
-        setResultado(msg, true);
+        setResultado(msg, true);        
+        
     }
     form.addEventListener('submit', recebeEventoForm);
 

@@ -66,15 +66,17 @@ Usamos o console log para testar se está funcinando.
 ```js
 btnTtarefa.addEventListener('click', function(e) {
     if(!inputTarefa.value) return;
+    // Chama a funç
+    criaTarefa(inputTarefa.value);
     console.log(inputTarefa.value);
 })
 ```
 
     Assim se nada for digitado, nada acontece, mas se algo for digitado, aparecerá no console.
 
-    Agora criaremos funções, sabendo que sempre devemos ter em mente, de não sobrecarregar funções com várias tarefas, sempre ter funções para tarefas especifícas.
+    Agora criaremos funções, sabendo que sempre devemos ter em mente de não sobrecarregar funções com várias tarefas, sempre ter funções para tarefas especifícas.
 
-    Distribuir os serviços que precisam ser feitos na página para outras funções fazerem.
+    Distribuir os serviços que precisam ser feitos na página para outras funções.
 
     Iniciamos criando uma função que irá criar a tarefa;
 
@@ -101,7 +103,7 @@ function criaLi() {
 }
 ```
 
-    E usamos essa função dentro da função cria lista;
+    E usamos essa função dentro da função cria tarefa;
 
 ```js
 function criaTarefa(textoInput){
