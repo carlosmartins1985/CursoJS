@@ -39,13 +39,6 @@ function criaBotaoApagar(li) {
     botaoApagar.setAttribute('title', 'Apagar essa tarefa');
     li.appendChild(botaoApagar);
 }
-    
-
-
-btnTtarefa.addEventListener('click', function(e) {
-    if(!inputTarefa.value) return;
-    criaTarefa(inputTarefa.value);
-})
 
 document.addEventListener('click', function(e) {
   const el = e.target;
@@ -53,6 +46,11 @@ document.addEventListener('click', function(e) {
         el.parentElement.remove();
         salvaTarefas();
     }
+})
+    
+btnTtarefa.addEventListener('click', function(e) {
+    if(!inputTarefa.value) return;
+    criaTarefa(inputTarefa.value);
 })
 
 function salvaTarefas() {
