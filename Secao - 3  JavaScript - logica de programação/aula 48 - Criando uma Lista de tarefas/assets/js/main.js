@@ -17,6 +17,11 @@ function criaLi() {
     return li;
 }
 
+btnTtarefa.addEventListener('click', function(e) {
+    if(!inputTarefa.value) return;
+    criaTarefa(inputTarefa.value);
+})
+
 inputTarefa.addEventListener('keypress', function(e) {
     if(e.keyCode === 13) {
         if(!inputTarefa.value) return;
@@ -48,10 +53,7 @@ document.addEventListener('click', function(e) {
     }
 })
     
-btnTtarefa.addEventListener('click', function(e) {
-    if(!inputTarefa.value) return;
-    criaTarefa(inputTarefa.value);
-})
+
 
 function salvaTarefas() {
     const liTarefas = tarefas.querySelectorAll('li');
