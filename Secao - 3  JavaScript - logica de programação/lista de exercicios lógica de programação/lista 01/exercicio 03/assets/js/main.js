@@ -7,28 +7,37 @@ const listarVendedores = document.querySelector(".listar-vendedores");
 function eventoForm(e) {
   e.preventDefault();
 
-  const vendedor = inputVendedor.value;
+  const vendedor = inputVendedor.value.trim();
   const vendas = Number(inputVendas.value);
 
-  const pessoa = [
-    {
-      nome: vendedor,
-      vendas: vendas,
-
-      comissao() {
-        return (this.vendas * 10) / 100;
-      },
+  const pessoa = {
+    nome: vendedor,
+    vendas: vendas,
+    comissao() {
+      return (this.vendas * 10) / 100;
     },
-  ];
+  };
 
-  for(let i in pessoa) {
+  const tr = document.createElement("tr");
 
-    const li = document.createElement("li");
+  const tdNome = document.createElement("td");
+  tdNome.textContent = pessoa.nome;
 
-    li.innerText = `${pessoa[i].nome} ${pessoa[i].vendas} ${pessoa[i].comissao()}`;
+  const tdVendas = document.createElement("td");
+  tdVendas.textContent = pessoa.vendas;
 
-    listarVendedores.appendChild(li);
-  }
+  const tdComissao = document.createElement("td");
+  tdComissao.textContent = pessoa.comissao().toFixed(2);
 
+  tr.appendChild(tdNome);
+  tr.appendChild(tdVendas);
+  tr.appendChild(tdComissao);
+
+  listarVendedores.appendChild(tr);
+
+  inputVendedor.value = "";
+  inputVendas.value = "";
+  inputVendedor.focus();
 }
+
 form.addEventListener("submit", eventoForm);
